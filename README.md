@@ -5,15 +5,15 @@ It also contains the data and model objects used in these analyses. This is avai
 
 ## Data
 
-* gitporpoise$pointdata
+* pointdata
   * SpatialPointsDataFrame containing locations of harbour porpoise observations from transect surveys. Analysed using LGCP model. Includes data on:
     * coordinates - Coordinate locations of observations in a Lambert azimuthal equal-area (LAEA) projection (units=km).
-* gitporpoise$griddata
+* griddata
   * SpatialPointsDataFrame containing gridded information for harbour porpoise observations. Analysed using gridded model. Includes data on:
     * coordinates - Coordinate locations of observations in a Lambert azimuthal equal-area (LAEA) projection (units=km).
     * Size - number of sightings in each grid cell. 
     * Effort - length of survey effort in each grid cell.
-* gitporpoise$gamdata
+* gamdata
   * data.frame containing gridded information for harbour porpoise observations and environmental data. Analysed using GAM. Includes data on:     
     * Longitude - Longitude coordinate location of observations.
     * Latitude - Latitude coordinate location of observations.
@@ -27,11 +27,11 @@ It also contains the data and model objects used in these analyses. This is avai
     * SPEEDCentered - Current speed (m/s) (centered by subtracting mean)
     * Fr_SideCentered - Thermal front side (centered by subtracting mean)
     * V_ShearCentered - Vertical shear (m/s) (centered by subtracting mean)
-* gitporpoise$samplers
+* samplers
   * SpatialLinesDataFrame containing information on line transects, used in LGCP model.
-* gitporpoise$mesh
+* mesh
   * INLA mesh triangulation used in LGCP and gridded models. 
-* gitporpoise$cov_pxl
+* cov_pxl
   * SpatialPixelsDataFrame containing covariate information at 1km grid resolution across spatial area covered by mesh. Used in LGCP and gridded models. Includes data on:
     * SlopeCentered - Slope (⁰) (centered by subtracting mean)
     * PsndgrvsndCentered - Proportion of sediment that was sand or gravelly sand (%) (centered by subtracting mean)
@@ -39,7 +39,7 @@ It also contains the data and model objects used in these analyses. This is avai
     * ChlCentered - Chlorophyll-aI (mgC/m^3) (centered by subtracting mean)
     * V_ShearCentered - Vertical shear (m/s) (centered by subtracting mean)
     * DepthCentered - Depth (m) (centered by subtracting mean)
-* gitporpoise$pred_pxl
+* pred_pxl
   * SpatialPixelsDataFrame containing covariate information at 1km grid resolution across spatial area of interest (within inner mesh boundary). Used for making predictions from LGCP and gridded models. Includes data on:
     * SlopeCentered - Slope (⁰) (centered by subtracting mean)
     * PsndgrvsndCentered - Proportion of sediment that was sand or gravelly sand (%) (centered by subtracting mean)
@@ -47,7 +47,7 @@ It also contains the data and model objects used in these analyses. This is avai
     * ChlCentered - Chlorophyll-aI (mgC/m^3) (centered by subtracting mean)
     * V_ShearCentered - Vertical shear (m/s) (centered by subtracting mean)
     * DepthCentered - Depth (m) (centered by subtracting mean)
-* gitporpoise$soap_boundary
+* soap_boundary
   * Boundary for GAM soap film smoother
-* gitporpoise$soap_knots
+* soap_knots
   * Knots for GAM soap film smoother
